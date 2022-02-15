@@ -1,0 +1,5 @@
+Setting up the object interaction.
+
+Attach the desired script to the object, attaching the text mesh pro object in your scene.
+When creating new script for further functionality, set the monobehaviour to 'Interactable' like public class Door_Interaction : Interactable.
+This grabs from Interactable script in the scripts folder.
