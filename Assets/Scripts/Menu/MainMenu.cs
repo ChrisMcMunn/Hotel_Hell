@@ -6,13 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    
+    int nextScene;
+
+    void Update()
+    {
+        nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextScene == 2)
+        {
+            nextScene = 0;
+        }
+    }
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(nextScene);
+        Debug.Log(nextScene);
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
+
 }

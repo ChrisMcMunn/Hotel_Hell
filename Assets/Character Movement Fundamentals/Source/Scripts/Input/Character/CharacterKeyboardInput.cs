@@ -34,5 +34,7 @@ namespace CMF
 		{
 			return Input.GetKey(jumpKey);
 		}
+
+
     }
 }
