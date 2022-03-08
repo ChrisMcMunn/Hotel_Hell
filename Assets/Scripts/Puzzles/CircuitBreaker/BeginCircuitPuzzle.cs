@@ -6,8 +6,10 @@ public class BeginCircuitPuzzle : Interactable
 {
     public GameUI pauseWorld;
     public GameObject PuzzleUI;
+
     private bool trigger;
 
+    // Start is called before the first frame update
     void Start()
     {
         trigger = false;
@@ -30,7 +32,8 @@ public class BeginCircuitPuzzle : Interactable
 
     public override string GetDescription()
     {
-            return null;
+        return null;
+
     }
 
     public override void Interact()
