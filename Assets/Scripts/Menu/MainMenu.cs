@@ -16,6 +16,10 @@ public class MainMenu : MonoBehaviour
         {
             nextScene = 0;
         }
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Cursor.visible = true;
+        }
     }
     public void PlayGame()
     {
