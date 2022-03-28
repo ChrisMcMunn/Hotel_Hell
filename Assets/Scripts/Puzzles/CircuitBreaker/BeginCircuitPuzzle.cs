@@ -6,7 +6,7 @@ public class BeginCircuitPuzzle : Interactable
 {
     public GameUI pauseWorld;
     public GameObject PuzzleUI;
-
+    public GameObject InteractionText;
     private bool trigger;
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class BeginCircuitPuzzle : Interactable
         }
         else
         {
-
+            InteractionText.SetActive(true);
         }
     }
 

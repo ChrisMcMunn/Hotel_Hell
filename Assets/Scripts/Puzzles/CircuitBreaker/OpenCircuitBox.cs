@@ -30,7 +30,7 @@ public class OpenCircuitBox : Interactable
 
     public override string GetDescription()
     {
-        return null;
+        return "Interact";
     }
 
     public override void Interact()
