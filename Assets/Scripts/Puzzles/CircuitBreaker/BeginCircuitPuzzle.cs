@@ -9,6 +9,9 @@ public class BeginCircuitPuzzle : Interactable
     public GameObject InteractionText;
     private bool trigger;
 
+    public bool WinGame = true;
+    public List<GameObject> Lights = new List<GameObject>(); 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,13 @@ public class BeginCircuitPuzzle : Interactable
             PuzzleUI.SetActive(true);
             Cursor.visible = true;
             Debug.Log("Play");
+            if (WinGame)
+            {
+                foreach (var GameObject in Lights)
+                { 
+                    GameObject.SetActive(false); 
+                }
+            }
         }
         else
         {
