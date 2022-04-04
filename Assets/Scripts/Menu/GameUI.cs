@@ -9,6 +9,7 @@ public class GameUI : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject inventoryUI;
+    public RisingWater pauseWater;
 
     // Update is called once per frame
     void Update()
@@ -53,11 +54,13 @@ public class GameUI : MonoBehaviour
     {
         Time.timeScale = 1f;
         Cursor.visible = false;
+        pauseWater.speed = pauseWater.holdSpeed;
     }
 
     public void Pause()
     {
         Time.timeScale = 0f;
         Cursor.visible = true;
+        pauseWater.speed = 0f;
     }
 }

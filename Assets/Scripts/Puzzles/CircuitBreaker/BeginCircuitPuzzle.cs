@@ -9,7 +9,7 @@ public class BeginCircuitPuzzle : Interactable
     public GameObject InteractionText;
     private bool trigger;
 
-    public bool WinGame = true;
+    public bool WinGame = false;
     public List<GameObject> Lights = new List<GameObject>(); 
 
     // Start is called before the first frame update
