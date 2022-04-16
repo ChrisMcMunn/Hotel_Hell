@@ -4,70 +4,37 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Wire : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class Wire : MonoBehaviour
 {
-    private Image wire;
-    private LineRenderer WireLines;
-    private Canvas canvas;
-    private bool isDragStarted = false;
+    public List<GameObject> Wires = new List<GameObject>();
 
-    public bool isEndWire;
+    public int listPlacement = 0;
 
-    private bool completeTask = false;
-
-    private void Awake()
+    void Update()
     {
-        wire = GetComponent<Image>();
-        WireLines = GetComponent<LineRenderer>();
-        canvas = GetComponentInParent<Canvas>();
-        WireLines.sortingOrder = 1;
+        
     }
 
-    private void Update()
+    public void ConnectWire()
     {
-        if (isDragStarted)
+        if (listPlacement == Wires.Count)
         {
-            Vector2 movePos;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                canvas.transform as RectTransform,
-                Input.mousePosition,
-                canvas.worldCamera,
-                out movePos);
-
-            WireLines.SetPosition(0, transform.position);
-            WireLines.SetPosition(1, canvas.transform.TransformPoint(movePos));
-        }
-        else
-        {
-            WireLines.SetPosition(0, Vector3.zero);
-            WireLines.SetPosition(1, Vector3.zero);
+            listPlacement = 0;
         }
 
-        bool isHovered = RectTransformUtility.RectangleContainsScreenPoint(transform as RectTransform, Input.mousePosition, canvas.worldCamera);
-
-        if (isHovered)
+        Wires[listPlacement].SetActive(true);
+        
+        if (listPlacement == 0)
         {
-
+            Wires[Wires.Count -1].SetActive(false);
         }
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-
-    }
-
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        if (isEndWire)
+        
+        if((listPlacement < Wires.Count) && (listPlacement != 0))
         {
-            return;
+            Wires[listPlacement - 1].SetActive(false);          
         }
-        isDragStarted = true;
 
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        isDragStarted = false;
+        listPlacement += 1;
+        
     }
 }

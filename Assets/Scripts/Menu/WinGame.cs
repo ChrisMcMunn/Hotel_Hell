@@ -7,12 +7,12 @@ public class WinGame : Interactable
     public BeginCircuitPuzzle checkWin;
     public GameUI pauseWorld;
     public GameObject WinUI;
-    private bool trigger;
+    //private bool trigger;
 
     // Start is called before the first frame update
     void Start()
     {
-        trigger = false;
+        //trigger = false;
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class WinGame : Interactable
 
     private void EnterLobby()
     {
-        if (checkWin.WinGame)
+        if (checkWin.WinGame == true)
         {
             pauseWorld.Pause();
             WinUI.SetActive(true);

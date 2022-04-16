@@ -26,17 +26,22 @@ public class BeginCircuitPuzzle : Interactable
             PuzzleUI.SetActive(true);
             Cursor.visible = true;
             Debug.Log("Play");
-            if (WinGame)
-            {
-                foreach (var GameObject in Lights)
-                { 
-                    GameObject.SetActive(false); 
-                }
-            }
+            
         }
         else
         {
             InteractionText.SetActive(true);
+        }
+    }
+
+    void Update()
+    {
+        if (WinGame == true)
+        {
+            foreach (var GameObject in Lights)
+            {
+                GameObject.SetActive(false);
+            }
         }
     }
 
