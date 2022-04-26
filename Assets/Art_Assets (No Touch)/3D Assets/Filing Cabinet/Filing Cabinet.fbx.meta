@@ -3,7 +3,12 @@ guid: 98a40671442862c4c8a5fe7a54d09ab6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: uv_checker_material_uv_grid_4096x4096
+    second: {fileID: 2100000, guid: 2fea15efac4fa43469e68ef540a23c44, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -63,7 +68,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
