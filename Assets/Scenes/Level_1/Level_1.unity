@@ -39740,7 +39740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693253368}
   m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: -0, w: 0}
-  m_LocalPosition: {x: -0.0014438629, y: 1.68711, z: 1.5238872}
+  m_LocalPosition: {x: -0.0014438629, y: 1.66, z: 1.5238872}
   m_LocalScale: {x: 0.72222173, y: 0.72222185, z: 0.7222218}
   m_Children: []
   m_Father: {fileID: 1976531699}
@@ -39875,13 +39875,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693253368}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2.5854104
-  m_Range: 10
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -39925,7 +39925,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 2876
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 10}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5}
   m_UseBoundingSphereOverride: 1
   m_UseViewFrustumForShadowCasterCull: 0
   m_ShadowRadius: 0
@@ -62881,7 +62881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4644009789167358, guid: 456c1cbc22897d1479a87984f33850bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 4644009789167358, guid: 456c1cbc22897d1479a87984f33850bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62933,7 +62933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 136949589350703928, guid: 456c1cbc22897d1479a87984f33850bc, type: 3}
       propertyPath: m_Height
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 136949589350703928, guid: 456c1cbc22897d1479a87984f33850bc, type: 3}
       propertyPath: m_Radius
@@ -71451,7 +71451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306218599}
   m_LocalRotation: {x: 0.50000006, y: 0.49999994, z: -0.50000006, w: 0.49999994}
-  m_LocalPosition: {x: 4.401446, y: 5.222888, z: -25.635113}
+  m_LocalPosition: {x: 3.49, y: 5.222888, z: -25.635113}
   m_LocalScale: {x: 0.7222218, y: 0.72222203, z: 0.7222221}
   m_Children: []
   m_Father: {fileID: 410947860}
@@ -71490,8 +71490,8 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
-  m_ShapeWidth: 2.9081092
-  m_ShapeHeight: 3.7738419
+  m_ShapeWidth: 1.2184372
+  m_ShapeHeight: 1.5122439
   m_AspectRatio: 1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
@@ -71591,8 +71591,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.2647033
-  m_Range: 10
+  m_Intensity: 25.401436
+  m_Range: 5.88
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -71632,11 +71632,11 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 2.9081092, y: 3.7738419}
+  m_AreaSize: {x: 1.2184372, y: 1.5122439}
   m_BounceIntensity: 0
   m_ColorTemperature: 2876
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 10}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.88}
   m_UseBoundingSphereOverride: 1
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -94392,7 +94392,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1714089592
@@ -96428,7 +96428,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.9141957, y: 0.730179}
   m_BounceIntensity: 0
-  m_ColorTemperature: 4426
+  m_ColorTemperature: 3180
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.0847266}
   m_UseBoundingSphereOverride: 0
@@ -116834,6 +116834,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1739721239}
     m_Modifications:
+    - target: {fileID: 7006832591433380928, guid: a84b8144c526127418fbf32d2ebed6f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531090743247577360, guid: a84b8144c526127418fbf32d2ebed6f4, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8550139948252324362, guid: a84b8144c526127418fbf32d2ebed6f4, type: 3}
       propertyPath: m_RootOrder
       value: 4
